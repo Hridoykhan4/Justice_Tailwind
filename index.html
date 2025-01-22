@@ -14,7 +14,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Fontawsome CDN -->
+    <!-- Font awesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -55,7 +55,7 @@
 
   <body>
     <header class="shadow-lg">
-      <div class="navbar p-1 py-5 w-11/12 mx-auto px-4">
+      <div class="navbar p-1 py-5 w-11/12 mx-auto max-w-[1440px]">
         <div class="navbar-start">
           <a class="btn btn-ghost text-xl">
             <img src="images/logo2.png" alt="" />
@@ -64,7 +64,7 @@
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li
-              class="hover:bg-btn-color hover:text-white transition duration-300 ease-in-out rounded-xl"
+              class="hover:bg-btn-color hover:text-white transition transform duration-300 ease-in-out rounded-xl"
             >
               <a>Home<i class="fa-solid fa-chevron-right"></i></a>
             </li>
@@ -124,31 +124,33 @@
       </div>
     </header>
 
-    <main class="">
-      <!-- banner -->
+    <main class="w-11/12 max-w-[1440px] mx-auto">
       <section
-        class="bg-[url('./images/banner.png')] bg-cover bg-no-repeat bg-center text-white rounded-lg"
+        class="bg-[linear-gradient(45deg,rgba(0,0,0,0.6),rgba(0,0,0,0.4)),url(./images/banner.png)] bg-cover bg-center"
       >
         <div
-          class="flex flex-col justify-center items-center text-center py-28 bg-black space-y-4 bg-opacity-40"
+          class="flex flex-col gap-6 justify-center text-center items-center h-[50vh] md:h-[60vh] lg:h-[90vh] text-white"
         >
-          <h1 class="sm:text-5xl text-3xl font-bold">
+          <h3
+            class="md:text-4xl font-extrabold text-3xl leading-10 tracking-wide"
+          >
             We Provide Effective <br />
             Legal Solutions
-          </h1>
-          <p class="w-2/3 mx-auto">
+          </h3>
+          <p class="md:w-2/3 px-2 font-normal">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour.
           </p>
-          <div class="flex gap-2 flex-col sm:flex-row">
+          <div class="flex md:gap-5 gap-4 items-center flex-col md:flex-row">
             <input
               type="text"
-              name=""
-              id=""
-              class="input border-2 border-btn-color w-96 text-black"
+              placeholder="Search Your Services"
+              class="input input-bordered md:w-96"
             />
-            <button type="submit" class="btn bg-btn-color hover:text-black">
+            <button
+              class="rounded-lg text-white font-semibold bg-btn-color px-6 py-3"
+            >
               Search
             </button>
           </div>
@@ -158,9 +160,9 @@
       <!-- Banner Section End -->
 
       <!-- Legal Practice area start -->
-      <section class="my-12 w-11/12 mx-auto">
+      <section class="my-14">
         <div
-          class="flex justify-center flex-col gap-3 items-center text-center"
+          class="flex justify-center flex-col gap-3 items-center text-center mb-4"
         >
           <h3 class="font-bold text-2xl tracking-wide">
             The Legal Practice Area
@@ -176,7 +178,7 @@
           class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 mt-10"
         >
           <div class="card shadow-lg">
-            <figure class="px-4 pt-3">
+            <figure class="px-4 py-3">
               <img
                 src="images/business.png"
                 alt="Business Law"
@@ -318,7 +320,7 @@
           <h1 class="text-2xl font-extrabold md:text-4xl text-center">
             What Our Client Say
           </h1>
-          <p class="w-2/3 mx-auto text-slate-500 font-medium">
+          <p class="md:w-2/3 mx-auto text-slate-500 font-medium">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, injected.
           </p>
@@ -414,13 +416,17 @@
             </div>
           </div>
 
-          <div class="md:w-1/2">
-            <img class="md:w-4/5" src="images/faq.png" alt="Legal FAQ" />
+          <div class="lg:w-1/2">
+            <img
+              class="lg:w-full md:w-4/5"
+              src="images/faq.png"
+              alt="Legal FAQ"
+            />
           </div>
         </div>
       </section>
 
-      <section class="my-16 w-11/12 mx-auto">
+      <section class="my-16">
         <div class="space-y-4 text-center">
           <h1 class="text-2xl font-extrabold md:text-4xl text-center">
             Contact With Us
@@ -432,10 +438,10 @@
         </div>
 
         <div class="mt-14 flex flex-col md:flex-row gap-20">
-          <div class="bg-green-50 p-6 rounded-lg shadow-md flex-1">
+          <div class="bg-green-50 p-3 rounded-lg shadow-md flex-1">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div
-                class="flex items-center flex-col gap-4 p-5 rounded-lg bg-white shadow-sm"
+                class="flex items-center flex-col gap-4 p-5 rounded-lg bg-white hover:shadow-2xl transition-all duration-500 ease-out shadow-sm"
               >
                 <i class="fa-solid fa-location-dot text-3xl text-green-600"></i>
                 <h3 class="font-semibold text-lg">Address</h3>
@@ -524,7 +530,7 @@
       </section>
     </main>
 
-    <div class="mt-20 text-base-content bg-black text-white">
+    <div class="text-base-content bg-black text-white">
       <footer class="footer py-10 px-4">
         <nav>
           <img src="images/logo.png" alt="" />
